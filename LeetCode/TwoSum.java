@@ -3,7 +3,7 @@
 //You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 //Tips: Array definition, constant can only be used in initializers; 
-	return statement position, be careful no return in else;
+//	return statement position, be careful no return in else;
 
 public class Solution {
     int[] indice;
