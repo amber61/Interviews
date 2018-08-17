@@ -1,30 +1,11 @@
 
-import java.util.Scanner;
 
-public class ReverseWord {
+public String ReverseWord(String s) {
 
-    private StringBuilder str;
+	StringBuilder sb = new StringBuilder();
 
-    public ReverseWord() {
-	str = new StringBuilder();
-    }
-
-    public String reverseWords(String s) {
-	for (int i = 0; i < s.length(); i++) {
-	    str.append(s.substring(i, i + 1));
+	for(int i=s.length(); i>0; i--) {
+		sb.append(s.substring(i-1, i)); 		
 	}
-	return str.reverse().toString();
-    }
-
-    @SuppressWarnings("resource")
-    public static void main(String[] args) {
-	Scanner input = new Scanner(System.in);
-	System.out.print("Please enter a word: ");
-	String strings = input.nextLine();
-
-	ReverseWord r = new ReverseWord();
-	System.out.println("The reversed word is: " + r.reverseWords(strings));
-
-    }
-
+	return sb.toString();
 }
